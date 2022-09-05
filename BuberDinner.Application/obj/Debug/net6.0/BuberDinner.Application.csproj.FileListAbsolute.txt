@@ -1,0 +1,15 @@
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net6.0\BuberDinner.Application.deps.json
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net6.0\BuberDinner.Application.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net6.0\BuberDinner.Application.pdb
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.csproj.AssemblyReference.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.AssemblyInfoInputs.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.AssemblyInfo.cs
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.csproj.CoreCompileInputs.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\refint\BuberDinner.Application.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.pdb
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\ref\BuberDinner.Application.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net6.0\BuberDinner.Domain.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net6.0\BuberDinner.Domain.pdb
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net6.0\BuberDinner.Application.csproj.CopyComplete

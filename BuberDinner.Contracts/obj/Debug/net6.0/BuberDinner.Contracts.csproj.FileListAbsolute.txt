@@ -1,0 +1,12 @@
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net6.0\BuberDinner.Contracts.deps.json
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net6.0\BuberDinner.Contracts.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net6.0\BuberDinner.Contracts.pdb
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.csproj.AssemblyReference.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.AssemblyInfoInputs.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.AssemblyInfo.cs
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.csproj.CoreCompileInputs.cache
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\refint\BuberDinner.Contracts.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\BuberDinner.Contracts.pdb
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net6.0\ref\BuberDinner.Contracts.dll
