@@ -1,37 +1,64 @@
 using BuberDinner.Application.Common.Authentication;
+using BurberDiner.Domain.Entities.Entities;
+using BurberDinner.Application.Common.Interfaces.Presistence;
 
 namespace BuberDinner.Application.Services.Authentication;
 
 public class AuthenticationService : IAuthenticationService
 {
     private readonly IJwtTokenGenerator _tokenGenerator;
-    public AuthenticationService(IJwtTokenGenerator tokenGenerator)
+    private readonly IUserRepository _userRepository;
+    public AuthenticationService(
+        IJwtTokenGenerator tokenGenerator,
+        IUserRepository userRepository
+    )
     {
         _tokenGenerator = tokenGenerator;
+        _userRepository = userRepository;
     }
 
     public AuthenticationResult Register(string firstName, string lastName, string email, string password)
     {
-        // check if user aleready exist
+        // 1- Validate the user does not exist
+        if (_userRepository.GetUserByEmail(email) is not null)
+        {
+            throw new Exception("User with given email already exist.");
+        }
+        // 2- Create user (Generate unique ID) & persist to Db 
+        var user = new User
+        {
+            FirstName = firstName,
+            LastName = lastName,
+            Email = email,
+            Password = password
+        };
+        _userRepository.AddUser(user);
 
-        // Generate Token
-        Guid userId = Guid.NewGuid();
-        var token = _tokenGenerator.GenerateToken(userId,firstName,lastName);
+        // 3- Generate jwt Token
+        var token = _tokenGenerator.GenerateToken(user);
+
         return new AuthenticationResult(
-            Guid.NewGuid(),
-            firstName,
-            lastName,
-            email,
+            user,
             token);
     }
 
     public AuthenticationResult Login(string email, string password)
     {
+        // 1- Validate the user does not exist
+        if (_userRepository.GetUserByEmail(email) is not User user)
+        {
+            throw new Exception("User with given email already exist.");
+        }
+        // 2- Validate the password is corrrect
+        if (user.Password != password)
+        {
+            throw new Exception("Password not valid");
+        }
+        // 3- create token
+        var token = _tokenGenerator.GenerateToken(user);
+
         return new AuthenticationResult(
-            Guid.NewGuid(),
-            "firstName",
-            "lastName",
-            email,
-            "token");
+            user,
+            token);
     }
 }
