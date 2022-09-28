@@ -1,10 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "bxnFWTUnFUUo429FLDaOuX9nb2XeLGU/zNmddllbgFHXYQB90QEcFeQ+ck+9RTYlPVpHm3OVVZD/runr0ijS2Q==",
+  "dgSpecHash": "Er1cNW4t2CfOBvfCOBBfedJOhi7wdJHbcsC/qGiPp+HpTxrYtbxo0/Rmted/5vmVqQLmN2InM8xCXDk1SkHT0A==",
   "success": true,
   "projectFilePath": "D:\\tutos\\aspnetcore\\Amichai Mantinband tutos\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.23.0\\microsoft.identitymodel.abstractions.6.23.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.23.0\\microsoft.identitymodel.jsonwebtokens.6.23.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.identitymodel.logging\\6.23.0\\microsoft.identitymodel.logging.6.23.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.23.0\\microsoft.identitymodel.tokens.6.23.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.23.0\\system.identitymodel.tokens.jwt.6.23.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }
