@@ -20,11 +20,9 @@ internal sealed class BuberDinerDefaultProblemDetailsFactory : ProblemDetailsFac
 
     public BuberDinerDefaultProblemDetailsFactory(
         IOptions<ApiBehaviorOptions> options)
-        //IOptions<ProblemDetailsOptions>? problemDetailsOptions = null)
     {
         _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
-        // _configure = problemDetailsOptions?.Value?.CustomizeProblemDetails;
-    }
+       }
 
     public override ProblemDetails CreateProblemDetails(
         HttpContext httpContext,
