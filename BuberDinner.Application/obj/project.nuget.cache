@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5FEhzl2X9iid1kqQzgz+uomVLZgw0y9nMNneFjmOUy0+UCmkqcQ5MlPih2fUyT8WZ/MKdcDSeuHdpdJfeE7d9w==",
+  "dgSpecHash": "w69DtXIRgbDCrZpFIkT4twqwSQlXuMeT02JI1BVcLGdUo7hLArKhBuQ+2kaHWLIQfGaoKMlxa6myVC3ilT498g==",
   "success": true,
   "projectFilePath": "D:\\tutos\\aspnetcore\\Amichai Mantinband tutos\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\diall\\.nuget\\packages\\erroror\\1.0.1\\erroror.1.0.1.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512"
   ],

@@ -1,10 +1,12 @@
 
- // Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
 #nullable enable
 
 using System.Diagnostics;
+using BuberDinner.Api.Common.Http;
+using ErrorOr;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -22,7 +24,7 @@ internal sealed class BuberDinerDefaultProblemDetailsFactory : ProblemDetailsFac
         IOptions<ApiBehaviorOptions> options)
     {
         _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
-       }
+    }
 
     public override ProblemDetails CreateProblemDetails(
         HttpContext httpContext,
@@ -98,7 +100,15 @@ internal sealed class BuberDinerDefaultProblemDetailsFactory : ProblemDetailsFac
         {
             problemDetails.Extensions["traceId"] = traceId;
         }
-        problemDetails.Extensions.Add("custumProperty", "custumValue");
+        // problemDetails.Extensions.Add("custumProperty", "custumValue");
+
+        var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
+
+        if (errors is not null)
+        {
+            problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+        }
+
         // _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
     }
 }

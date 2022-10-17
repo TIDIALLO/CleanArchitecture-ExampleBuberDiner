@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ErrorOr/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -215,6 +228,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "OneOf/3.0.223": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/6.23.0": {
         "type": "package",
         "dependencies": {
@@ -308,7 +330,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "ErrorOr": "1.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "oneof": "3.0.223"
         },
         "compile": {
           "bin/placeholder/BuberDinner.Application.dll": {}
@@ -320,6 +344,9 @@
       "BuberDinner.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ErrorOr": "1.0.1"
+        },
         "compile": {
           "bin/placeholder/BuberDinner.Domain.dll": {}
         },
@@ -330,6 +357,20 @@
     }
   },
   "libraries": {
+    "ErrorOr/1.0.1": {
+      "sha512": "4ALbolifN9sinir3tZGntBEoJso96JyvjnnsAaNxxB2QFEkVtzcCSlvGkp27RDKe3UIexiV/wQrFceWfr7S5XA==",
+      "type": "package",
+      "path": "erroror/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "erroror.1.0.1.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -657,6 +698,21 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "OneOf/3.0.223": {
+      "sha512": "YWabiHBFfDdKIO7/TEa72mARVVo5u5FqFnfXuTqjIupMvJlhoH8d0m4uKtczaINuT0vGR1qlXJayeU6bTw5myg==",
+      "type": "package",
+      "path": "oneof/3.0.223",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.223.nupkg.sha512",
+        "oneof.nuspec"
       ]
     },
     "System.IdentityModel.Tokens.Jwt/6.23.0": {

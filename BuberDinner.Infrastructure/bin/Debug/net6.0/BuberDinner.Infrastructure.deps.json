@@ -17,6 +17,14 @@
           "BuberDinner.Infrastructure.dll": {}
         }
       },
+      "ErrorOr/1.0.1": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.Configuration/6.0.1": {
         "dependencies": {
@@ -145,6 +153,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "OneOf/3.0.223": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/6.23.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.23.0",
@@ -176,13 +192,18 @@
       "BuberDinner.Application/1.0.0": {
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "ErrorOr": "1.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "OneOf": "3.0.223"
         },
         "runtime": {
           "BuberDinner.Application.dll": {}
         }
       },
       "BuberDinner.Domain/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "1.0.1"
+        },
         "runtime": {
           "BuberDinner.Domain.dll": {}
         }
@@ -194,6 +215,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ErrorOr/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ALbolifN9sinir3tZGntBEoJso96JyvjnnsAaNxxB2QFEkVtzcCSlvGkp27RDKe3UIexiV/wQrFceWfr7S5XA==",
+      "path": "erroror/1.0.1",
+      "hashPath": "erroror.1.0.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -292,6 +320,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "OneOf/3.0.223": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YWabiHBFfDdKIO7/TEa72mARVVo5u5FqFnfXuTqjIupMvJlhoH8d0m4uKtczaINuT0vGR1qlXJayeU6bTw5myg==",
+      "path": "oneof/3.0.223",
+      "hashPath": "oneof.3.0.223.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/6.23.0": {
       "type": "package",

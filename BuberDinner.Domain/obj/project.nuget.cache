@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vE6EOUGW96T+T6MgAiC3Fmq/ZybppS+qUF04XO+hL4JVQRXJeNSrpBJL++nlrq4tgvYd3Z8hH5Roej4Stkq/oA==",
+  "dgSpecHash": "yT4LANE/Jo+OAG6h68nCl5ji2ntOz8NHF9r3ZQWGT4KSit+ef1t5Uzih4bQjzrBqHGqUdOiVB5FyUjQp/kOzXA==",
   "success": true,
   "projectFilePath": "D:\\tutos\\aspnetcore\\Amichai Mantinband tutos\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\diall\\.nuget\\packages\\erroror\\1.0.1\\erroror.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

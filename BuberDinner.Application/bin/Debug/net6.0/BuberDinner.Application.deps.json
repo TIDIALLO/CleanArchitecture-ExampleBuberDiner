@@ -9,10 +9,20 @@
       "BuberDinner.Application/1.0.0": {
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "ErrorOr": "1.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "OneOf": "3.0.223"
         },
         "runtime": {
           "BuberDinner.Application.dll": {}
+        }
+      },
+      "ErrorOr/1.0.1": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
@@ -23,7 +33,18 @@
           }
         }
       },
+      "OneOf/3.0.223": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BuberDinner.Domain/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "1.0.1"
+        },
         "runtime": {
           "BuberDinner.Domain.dll": {}
         }
@@ -36,12 +57,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ErrorOr/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ALbolifN9sinir3tZGntBEoJso96JyvjnnsAaNxxB2QFEkVtzcCSlvGkp27RDKe3UIexiV/wQrFceWfr7S5XA==",
+      "path": "erroror/1.0.1",
+      "hashPath": "erroror.1.0.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "OneOf/3.0.223": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YWabiHBFfDdKIO7/TEa72mARVVo5u5FqFnfXuTqjIupMvJlhoH8d0m4uKtczaINuT0vGR1qlXJayeU6bTw5myg==",
+      "path": "oneof/3.0.223",
+      "hashPath": "oneof.3.0.223.nupkg.sha512"
     },
     "BuberDinner.Domain/1.0.0": {
       "type": "project",
