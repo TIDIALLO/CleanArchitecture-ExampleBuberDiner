@@ -2,9 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
 using ErrorOr;
- 
+using MediatR;
+
 using BurberDiner.Domain.Common.Errors;
 using static BurberDiner.Domain.Common.Errors.Errors;
+using BuberDinner.Application.Services.Authentication.Commands;
+using BuberDinner.Application.Services.Authentication.Queries;
 
 //using BuberDinner.Api.Controllers;
 
@@ -14,17 +17,21 @@ namespace BuberDinner.Api.Controllers;
 // [ErrorHandlingFilter]
 public class AuthenticatorController : ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly IAuthenticationCommandService _authenticationCommandService;
+    private readonly IAuthenticationQueryService _authenticationQueryService;
 
-    public AuthenticatorController(IAuthenticationService authenticationService)
+    public AuthenticatorController(
+        IAuthenticationCommandService authenticationCommandtionService,
+        IAuthenticationQueryService authenticationQueryService)
     {
-        _authenticationService = authenticationService;
+        _authenticationCommandService = authenticationCommandtionService;
+        _authenticationQueryService = authenticationQueryService;
     }
 
     [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
+        ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register(
             request.FirstName,
             request.LastName,
             request.Email,
@@ -60,9 +67,6 @@ public class AuthenticatorController : ApiController
 
         // return Ok(response);
     }
-
-
-
     // private static AuthenticationResponse NewMethod(AuthenticationResult authResult)
     // {
     //     return  new AuthenticationResponse(
@@ -76,33 +80,20 @@ public class AuthenticatorController : ApiController
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Login(
+        var authResult = _authenticationQueryService.Login(
            request.Email,
            request.Password);
-
-        var response = _authenticationService.Login(
-            request.Email,
-            request.Password
-        );
-        //     authResult.user.Id,
-        //     authResult.user.FirstName,
-        //     authResult.user.LastName,
-        //     authResult.user.Email,
-        //     authResult.Token
-        // ); Authentication.InvalidCredentials
-        //return Ok(response);
         if (authResult.IsError
             && authResult.FirstError == Authentication.InvalidCredentials)
         {
-            return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
+            return Problem(
+                statusCode: StatusCodes.Status401Unauthorized,
+                title: authResult.FirstError.Description);
         }
-
         return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
             errors => Problem(errors)
         );
-
-
     }
     private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
     {

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XqqH87hpx+c01lU6EPn3PRAsCl4xPfMyQr9vATb6aU88yvahWqhoWIgCi/LbSeXWQFam6E05o8GBitn/95rMbA==",
+  "dgSpecHash": "2qXQe32CXhe48R84WfiYjb7tj4tp4V+ah1nqufpW0eSNX9EGES911hOM5il+FlQewO2Sg1ahy9Yl3Ig6U2TZwg==",
   "success": true,
   "projectFilePath": "D:\\tutos\\aspnetcore\\Amichai Mantinband tutos\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diall\\.nuget\\packages\\erroror\\1.0.1\\erroror.1.0.1.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
