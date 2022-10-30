@@ -3,11 +3,10 @@ using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
 using ErrorOr;
 using MediatR;
-
-using BurberDiner.Domain.Common.Errors;
 using static BurberDiner.Domain.Common.Errors.Errors;
-using BuberDinner.Application.Services.Authentication.Commands;
-using BuberDinner.Application.Services.Authentication.Queries;
+using BuberDinner.Application.Authentication.Queries.Login;
+using BuberDinner.Application.Authentication.Common;
+
 
 //using BuberDinner.Api.Controllers;
 
@@ -17,72 +16,34 @@ namespace BuberDinner.Api.Controllers;
 // [ErrorHandlingFilter]
 public class AuthenticatorController : ApiController
 {
-    private readonly IAuthenticationCommandService _authenticationCommandService;
-    private readonly IAuthenticationQueryService _authenticationQueryService;
-
-    public AuthenticatorController(
-        IAuthenticationCommandService authenticationCommandtionService,
-        IAuthenticationQueryService authenticationQueryService)
+    private readonly ISender _mediator;
+    public AuthenticatorController(IMediator mediator
+    )
     {
-        _authenticationCommandService = authenticationCommandtionService;
-        _authenticationQueryService = authenticationQueryService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register(
+        var command = new Application.Services.Authentication.Register.RegisterCommand(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
-        // Utilisation avec Match
-        // return authResult.Match(
-        //     authResult => Ok(NewMethod(authResult)),
-        //     _ => Problem(
-        //         statusCode: StatusCodes.Status409Conflict,
-        //         title: "User already exist")
-        // );
-        //****************************************************************************
-
-        // Utilisation MatchFirst
-        // return authResult.MatchFirst(
-        //     authResult => Ok(MapAuthResult(authResult)),
-        //     firtError => Problem(
-        //                     statusCode: StatusCodes.Status409Conflict,
-        //                     title: firtError.Description)
-        // );
+        ErrorOr<AuthenticationResult> authResult = 
+            (ErrorOr<AuthenticationResult>)await _mediator.Send(command);    
         //=================       Using ApiController class   ===========================================
         return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
             errors => Problem(errors)
         );
-        // var response = new AuthenticationResponse(
-        //     authResult.user.Id,
-        //     authResult.user.FirstName,
-        //     authResult.user.LastName,
-        //     authResult.user.Email,
-        //     authResult.Token
-        // );
-
-        // return Ok(response);
     }
-    // private static AuthenticationResponse NewMethod(AuthenticationResult authResult)
-    // {
-    //     return  new AuthenticationResponse(
-    //         authResult.user.Id,
-    //         authResult.user.FirstName,
-    //         authResult.user.LastName,
-    //         authResult.user.Email,
-    //         authResult.Token);
-    // }
-
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authenticationQueryService.Login(
-           request.Email,
-           request.Password);
+        var query = new LoginQuery(request.Email, request.Password);
+        var authResult = await _mediator.Send(query);
         if (authResult.IsError
             && authResult.FirstError == Authentication.InvalidCredentials)
         {
@@ -98,10 +59,10 @@ public class AuthenticatorController : ApiController
     private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
     {
         return new AuthenticationResponse(
-            authResult.user.Id,
-            authResult.user.FirstName,
-            authResult.user.LastName,
-            authResult.user.Email,
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.Token);
     }
 }

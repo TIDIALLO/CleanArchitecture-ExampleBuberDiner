@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9YMoRchxK+7kMzx2D3a/coDJIckHNWx7OIwJvnb+0lurPRKjUkFJtmV7vUn0YSBXRbay4OSCVsXKVJXCIWbNhQ==",
+  "dgSpecHash": "npxFRrM9uIABqSYXeZbgRMB6ev3D2Z0mp22aSzwcuyF0SUoclmO2TjayAaZTY/7QHWGc0dfgM0M28hdjBTVg/Q==",
   "success": true,
   "projectFilePath": "D:\\tutos\\aspnetcore\\Amichai Mantinband tutos\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diall\\.nuget\\packages\\erroror\\1.0.1\\erroror.1.0.1.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\diall\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512"
   ],

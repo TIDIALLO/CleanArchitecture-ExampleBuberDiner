@@ -36,3 +36,6 @@ D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\Bub
 D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\OneOf.dll
 D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\ErrorOr.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\tutos\aspnetcore\Amichai Mantinband tutos\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

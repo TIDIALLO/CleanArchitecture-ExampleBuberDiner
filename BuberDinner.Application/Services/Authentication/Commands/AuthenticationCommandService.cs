@@ -1,3 +1,4 @@
+using BuberDinner.Application.Authentication.Common;
 using BuberDinner.Application.Common.Authentication;
 using BuberDinner.Application.Common.Errors;
 using BurberDiner.Domain.Common.Errors;
